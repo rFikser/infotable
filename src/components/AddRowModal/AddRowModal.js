@@ -1,11 +1,10 @@
-import { random } from 'lodash';
 import React, { useState } from 'react';
 import './addmodal.css'
 
 export const AddRowModal = (props) => {
 
     const [newContact, setNewContact] = useState({});
-    const [isValid, setIsValid] = useState(false)
+    
     function randomInt(min, max) {
         return Math.floor(Math.random() * (max - min) + min)
     }
@@ -17,10 +16,6 @@ export const AddRowModal = (props) => {
             setNewContact({ ...newContact, id: randomInt(1000, 10000), [e.target.name]: e.target.value })
         }
     }
-
-
-
-
 
     return (
         <div className='modal-back'>

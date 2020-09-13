@@ -121,7 +121,7 @@ class App extends Component {
                         ? <Loader />
                         : <div>
                             <nav className='navbar bg-primary navbar-dark'>
-                                <a className='navbar-brand' href=''>Information Table</a>
+                                <a className='navbar-brand' href='#'>Information Table</a>
                                 <button onClick={this.openModal} className='btn btn-outline-dark'>Добавить</button>
                                 <Search handleSearch={this.handleSearch} />
                             </nav>
